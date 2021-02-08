@@ -43,14 +43,13 @@ class NavigateSpiderViewModelTests: XCTestCase {
         
         // Test
         
-        viewModel.navigateSpider(with: instructionSet) { spiderPosition, error in
-            if let error = error {
-                XCTFail("Something has went wrong: \(error)")
-            } else if let spiderPosition = spiderPosition {
-                finalXPosition = spiderPosition.xPosition
-                finalYPosition = spiderPosition.yPosition
-                finalDirection = spiderPosition.direction
-            }
+        do {
+            let spiderPosition = try viewModel.navigateSpider(with: instructionSet)
+            finalXPosition = spiderPosition.xPosition
+            finalYPosition = spiderPosition.yPosition
+            finalDirection = spiderPosition.direction
+        } catch {
+            XCTFail("Spider navigation failed: \(error.localizedDescription)")
         }
         
         // Assert
@@ -65,26 +64,11 @@ class NavigateSpiderViewModelTests: XCTestCase {
         // Setup
         
         let instructionSet = "31231"
-        var finalXPosition: Int = 0
-        var finalYPosition: Int = 0
-        var finalDirection: Direction = .up
         
         // Test
-        
-        viewModel.navigateSpider(with: instructionSet) { spiderPosition, error in
-            if let error = error {
-                XCTAssertNotNil(error)
-            } else if let spiderPosition = spiderPosition {
-                finalXPosition = spiderPosition.xPosition
-                finalYPosition = spiderPosition.yPosition
-                finalDirection = spiderPosition.direction
-            }
-        }
-        
+
         // Assert
         
-        XCTAssertNotEqual(finalXPosition, 3)
-        XCTAssertNotEqual(finalYPosition, 1)
-        XCTAssertNotEqual(finalDirection, .right)
+        XCTAssertThrowsError(try viewModel.navigateSpider(with: instructionSet))
     }
 }

@@ -13,7 +13,6 @@
 		7B54438325D1A0C300C9EC22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B54438225D1A0C300C9EC22 /* Preview Assets.xcassets */; };
 		7B54438625D1A0C300C9EC22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B54438425D1A0C300C9EC22 /* LaunchScreen.storyboard */; };
 		7B54439125D1A0C300C9EC22 /* IngenieSolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54439025D1A0C300C9EC22 /* IngenieSolutionTests.swift */; };
-		7B54439C25D1A0C300C9EC22 /* IngenieSolutionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54439B25D1A0C300C9EC22 /* IngenieSolutionUITests.swift */; };
 		7B5443CC25D1A20A00C9EC22 /* NavigationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5443C925D1A20A00C9EC22 /* NavigationError.swift */; };
 		7B5443CD25D1A20A00C9EC22 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5443CA25D1A20A00C9EC22 /* Command.swift */; };
 		7B5443CE25D1A20A00C9EC22 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5443CB25D1A20A00C9EC22 /* Direction.swift */; };
@@ -25,13 +24,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		7B54438D25D1A0C300C9EC22 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B54436E25D1A0C300C9EC22 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B54437525D1A0C300C9EC22;
-			remoteInfo = IngenieSolution;
-		};
-		7B54439825D1A0C300C9EC22 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7B54436E25D1A0C300C9EC22 /* Project object */;
 			proxyType = 1;
@@ -51,9 +43,6 @@
 		7B54438C25D1A0C300C9EC22 /* IngenieSolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IngenieSolutionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B54439025D1A0C300C9EC22 /* IngenieSolutionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngenieSolutionTests.swift; sourceTree = "<group>"; };
 		7B54439225D1A0C300C9EC22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B54439725D1A0C300C9EC22 /* IngenieSolutionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IngenieSolutionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B54439B25D1A0C300C9EC22 /* IngenieSolutionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngenieSolutionUITests.swift; sourceTree = "<group>"; };
-		7B54439D25D1A0C300C9EC22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B5443C925D1A20A00C9EC22 /* NavigationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationError.swift; sourceTree = "<group>"; };
 		7B5443CA25D1A20A00C9EC22 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		7B5443CB25D1A20A00C9EC22 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
@@ -78,13 +67,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B54439425D1A0C300C9EC22 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,7 +75,6 @@
 			children = (
 				7B54437825D1A0C300C9EC22 /* IngenieSolution */,
 				7B54438F25D1A0C300C9EC22 /* IngenieSolutionTests */,
-				7B54439A25D1A0C300C9EC22 /* IngenieSolutionUITests */,
 				7B54437725D1A0C300C9EC22 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,7 +84,6 @@
 			children = (
 				7B54437625D1A0C300C9EC22 /* IngenieSolution.app */,
 				7B54438C25D1A0C300C9EC22 /* IngenieSolutionTests.xctest */,
-				7B54439725D1A0C300C9EC22 /* IngenieSolutionUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,15 +114,6 @@
 				7B54439225D1A0C300C9EC22 /* Info.plist */,
 			);
 			path = IngenieSolutionTests;
-			sourceTree = "<group>";
-		};
-		7B54439A25D1A0C300C9EC22 /* IngenieSolutionUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7B54439B25D1A0C300C9EC22 /* IngenieSolutionUITests.swift */,
-				7B54439D25D1A0C300C9EC22 /* Info.plist */,
-			);
-			path = IngenieSolutionUITests;
 			sourceTree = "<group>";
 		};
 		7B5443AC25D1A0C700C9EC22 /* Application */ = {
@@ -256,24 +227,6 @@
 			productReference = 7B54438C25D1A0C300C9EC22 /* IngenieSolutionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7B54439625D1A0C300C9EC22 /* IngenieSolutionUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B5443A625D1A0C300C9EC22 /* Build configuration list for PBXNativeTarget "IngenieSolutionUITests" */;
-			buildPhases = (
-				7B54439325D1A0C300C9EC22 /* Sources */,
-				7B54439425D1A0C300C9EC22 /* Frameworks */,
-				7B54439525D1A0C300C9EC22 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B54439925D1A0C300C9EC22 /* PBXTargetDependency */,
-			);
-			name = IngenieSolutionUITests;
-			productName = IngenieSolutionUITests;
-			productReference = 7B54439725D1A0C300C9EC22 /* IngenieSolutionUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -287,10 +240,6 @@
 						CreatedOnToolsVersion = 12.3;
 					};
 					7B54438B25D1A0C300C9EC22 = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = 7B54437525D1A0C300C9EC22;
-					};
-					7B54439625D1A0C300C9EC22 = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = 7B54437525D1A0C300C9EC22;
 					};
@@ -311,7 +260,6 @@
 			targets = (
 				7B54437525D1A0C300C9EC22 /* IngenieSolution */,
 				7B54438B25D1A0C300C9EC22 /* IngenieSolutionTests */,
-				7B54439625D1A0C300C9EC22 /* IngenieSolutionUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -328,13 +276,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7B54438A25D1A0C300C9EC22 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B54439525D1A0C300C9EC22 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,14 +309,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B54439325D1A0C300C9EC22 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B54439C25D1A0C300C9EC22 /* IngenieSolutionUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -383,11 +316,6 @@
 			isa = PBXTargetDependency;
 			target = 7B54437525D1A0C300C9EC22 /* IngenieSolution */;
 			targetProxy = 7B54438D25D1A0C300C9EC22 /* PBXContainerItemProxy */;
-		};
-		7B54439925D1A0C300C9EC22 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B54437525D1A0C300C9EC22 /* IngenieSolution */;
-			targetProxy = 7B54439825D1A0C300C9EC22 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -605,46 +533,6 @@
 			};
 			name = Release;
 		};
-		7B5443A725D1A0C300C9EC22 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4WAX7SE2PW;
-				INFOPLIST_FILE = IngenieSolutionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.caolanowens.IngenieSolutionUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = IngenieSolution;
-			};
-			name = Debug;
-		};
-		7B5443A825D1A0C300C9EC22 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4WAX7SE2PW;
-				INFOPLIST_FILE = IngenieSolutionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.caolanowens.IngenieSolutionUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = IngenieSolution;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -671,15 +559,6 @@
 			buildConfigurations = (
 				7B5443A425D1A0C300C9EC22 /* Debug */,
 				7B5443A525D1A0C300C9EC22 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B5443A625D1A0C300C9EC22 /* Build configuration list for PBXNativeTarget "IngenieSolutionUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B5443A725D1A0C300C9EC22 /* Debug */,
-				7B5443A825D1A0C300C9EC22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

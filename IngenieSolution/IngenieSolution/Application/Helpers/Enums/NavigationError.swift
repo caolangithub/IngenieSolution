@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum NavigationError {
+enum NavigationError: Error {
     case incorrectCommand
 }

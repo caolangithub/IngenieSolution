@@ -34,17 +34,15 @@ internal final class NavigateSpiderViewModel {
 
 extension NavigateSpiderViewModel {
     
-    func navigateSpider(with instructionSet: String, completion: @escaping (SpiderPosition?, NavigationError?) -> Void) {
-        _ = instructionSet.map { character in
+    func navigateSpider(with instructionSet: String) throws -> SpiderPosition {
+        for character in instructionSet {
             let uppercaseCharacter = character.uppercased()
             guard let command = Command.init(rawValue: uppercaseCharacter) else {
-                completion(nil, .incorrectCommand)
-                return
+                throw NavigationError.incorrectCommand
             }
             moveSpider(with: command)
         }
-        let spiderPosition = SpiderPosition(spider.xPosition, spider.yPosition, spider.direction)
-        completion(spiderPosition, nil)
+        return SpiderPosition(spider.xPosition, spider.yPosition, spider.direction)
     }
 }
 
